@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Main layout */
+.page {
+    text-align: center;
+    max-width: 900px;
+    padding: 30px 20px;
+}
+
+/* Text */
+.text-box h1 {
+    font-size: 2.6em;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Button */
+.surprise-btn {
+    margin-top: 25px;
+    padding: 15px 35px;
+    font-size: 1.3em;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.surprise-btn:hover {
+    transform: scale(1.08);
+}
+
+/* Video */
+.video-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 60%;
+    max-width: 420px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Hidden */
+.hidden {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .text-box h1 {
+        font-size: 2.1em;
+    }
+
+    .text-box p {
+        font-size: 1.1em;
+    }
+
+    video {
+        width: 90%;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy New Year ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <!-- Text First -->
+    <div class="text-box">
+        <h1>Happy New Year, My Dhanna ❤️</h1>
+
+        <p>
+            As this new year begins, I just want you to know  
+            how deeply grateful I am to have you in my life.
+        </p>
+
+        <p>
+            You are my peace, my happiness,  
+            and the most beautiful part of my every day.
+        </p>
+
+        <p>
+            No matter what this year brings,  
+            I promise to walk beside you, always.
+            Harshit loves his Dhanna.
+            I love you more and more and more........
+        </p>
+    </div>
+
+    <!-- Button -->
+    <button class="surprise-btn" onclick="showVideo()">
+        Click here for a surprise ❤️
+    </button>
+
+    <!-- Video (Hidden initially) -->
+    <div class="video-box hidden" id="videoBox">
+        <video id="loveVideo" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+<script>
+function showVideo() {
+    document.getElementById("videoBox").classList.remove("hidden");
+    document.getElementById("loveVideo").play();
+}
+</script>
+
+</body>
+</html>
